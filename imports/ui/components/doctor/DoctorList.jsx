@@ -14,7 +14,9 @@ const DoctorList = ({ deleteDoctor, getDoctorUpdate }) => {
             {doctores.length !== 0?  
             <>
             <Titulo titulo='Lista Doctores'/>
+            <div class="table-responsive">
             <Table
+            table-sm 
             striped bordered hover>
             <thead className="head-Table">
                 <tr>
@@ -54,6 +56,7 @@ const DoctorList = ({ deleteDoctor, getDoctorUpdate }) => {
                 ))}
             </tbody>
             </Table>
+            </div>
             </>
              :
              <h6>No Hay Doctores Registrados</h6>

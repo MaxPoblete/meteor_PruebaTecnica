@@ -5,10 +5,10 @@ const Header = ({ mensaje, claseMensaje }) => {
 
   return(
     <Row>
-      <Col lg={6} xs={6}>
+      <Col lg={6} xs={12}>
         <h3><strong>Mantenedor Doctores</strong></h3>
       </Col>
-      <Col lg={6} xs={6}>
+      <Col lg={6} xs={12}>
         {mensaje !== ''?
         <h5 className={claseMensaje}><strong>{ mensaje }</strong></h5>
         :

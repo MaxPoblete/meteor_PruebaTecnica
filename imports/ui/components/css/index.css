@@ -28,3 +28,14 @@ border-radius: 10px;
     background-color:rgb(151, 89, 151) ;
     color: white;
 }
+@media (max-width: 600px) {
+    .cont-form{
+        background-color: rgb(151, 89, 151);
+        color:white;
+        padding: 1rem;
+        height: auto;
+        width: auto;
+        border-radius: 10px;
+      
+    }
+}
