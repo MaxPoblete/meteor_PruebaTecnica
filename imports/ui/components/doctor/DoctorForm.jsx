@@ -75,14 +75,14 @@ const DoctorForm = ({
   };
  
   return (
-    <Col lg={3} xs={12} className="m-4 cont-form">
+    <Col lg={3} sm={6} xs={12} className="m-4 cont-form">
+
       {showBtnUpdate?
        <Titulo titulo='Editar Doctor'/>
-    :
-    <Titulo titulo='Agregar Doctor'/>
-    }
-       
-         <Form className="" onSubmit={handleSubmit} >
+      :
+      <Titulo titulo='Agregar Doctor'/>
+      }
+       <Form className="" onSubmit={handleSubmit} >
                 <Row>
                   <Col lg={6} xs={12}>
                     <Form.Control
@@ -142,8 +142,6 @@ const DoctorForm = ({
                           onChange={actualizarState}
                           size="sm"
                           as="select">
-
-                      <option value="">Seleccione Especialidad</option>
                         <Especialidad/>
                     </Form.Control>
                   </Col>
