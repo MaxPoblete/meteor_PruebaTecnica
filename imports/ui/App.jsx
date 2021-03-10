@@ -39,8 +39,8 @@ const App = () => {
 
   const CreateDoctor = (doctorAdd) => {DoctorsCollection.insert({
     nombres: doctorAdd.nombres,
-    apellidoPaterno: doctorAdd.apellidoMaterno,
-    apellidoMaterno: doctorAdd.apellidoPaterno,
+    apellidoPaterno: doctorAdd.apellidoPaterno,
+    apellidoMaterno: doctorAdd.apellidoMaterno,
     rut: doctorAdd.rut,   
     especialidad: doctorAdd.especialidad,
     createdAt: new Date()
