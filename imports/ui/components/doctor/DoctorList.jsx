@@ -50,7 +50,7 @@ const DoctorList = ({ deleteDoctor, getDoctorUpdate }) => {
                                 size="sm"
                                 className="btn btn-primary" 
                                 onClick={ () => getDoctorUpdate(d) }>
-                                Update
+                                Actualizar
                             </button>
                         </td>
                     </tr>
