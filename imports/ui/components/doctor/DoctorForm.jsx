@@ -12,7 +12,8 @@ const DoctorForm = ({
   setDoctor, 
   updateDoctor,
   showBtnUpdate,
-  setClaseMensaje
+  setClaseMensaje,
+  restablecergit
  }) => {
 
   
@@ -70,13 +71,7 @@ const DoctorForm = ({
 
     CreateDoctor(doctor)
 
-    setDoctor({
-      nombres:'',
-      apellidoPaterno:'',
-      apellidoMaterno:'',
-      rut:'',
-      especialidad:''
-    });
+    restablecer()
   };
  
   return (

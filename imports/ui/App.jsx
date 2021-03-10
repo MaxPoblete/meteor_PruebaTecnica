@@ -72,7 +72,7 @@ const updateDoctor = (doctor) => {
   setMensaje('Doctor Actualizado Con Exito')
   setClaseMensaje("exito")
   restablecer()
-
+  setShowBtnUpdate(false)
 }
 
 const restablecer = () => {
@@ -83,7 +83,6 @@ const restablecer = () => {
     rut:'',
     especialidad:''
   })
-  setShowBtnUpdate(false)
 }
 
   return(
@@ -105,6 +104,7 @@ const restablecer = () => {
           updateDoctor={updateDoctor}
           setDoctor={setDoctor}
           setClaseMensaje={setClaseMensaje}
+          restablecer={restablecer}
         />
         <DoctorList
           deleteDoctor={deleteDoctor}
