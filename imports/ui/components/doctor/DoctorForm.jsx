@@ -81,7 +81,12 @@ const DoctorForm = ({
  
   return (
     <Col lg={3} xs={12} className="m-4 cont-form">
-        <Titulo titulo='Agregar Doctor'/>
+      {showBtnUpdate?
+       <Titulo titulo='Editar Doctor'/>
+    :
+    <Titulo titulo='Agregar Doctor'/>
+    }
+       
          <Form className="" onSubmit={handleSubmit} >
                 <Row>
                   <Col lg={6} xs={12}>
