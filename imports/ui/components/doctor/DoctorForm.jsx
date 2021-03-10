@@ -13,7 +13,7 @@ const DoctorForm = ({
   updateDoctor,
   showBtnUpdate,
   setClaseMensaje,
-  restablecergit
+  restablecer
  }) => {
 
   
