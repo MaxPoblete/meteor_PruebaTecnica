@@ -29,10 +29,8 @@ const DoctorForm = ({
     e.preventDefault();
 
     if (nombres.trim() === ''){
-      setTimeout(function(){ 
-        setMensaje('Ingrese nombre valido');
-        setClaseMensaje("error")
-       }, 3000);
+      setMensaje('Ingrese nombre valido');
+      setClaseMensaje("error")
        return;
     }
 
