@@ -15,7 +15,9 @@
 body{
     background-color:rgb(224, 224, 224) ;
 }
-
+.header{
+ height: 4rem;
+}
 .cont-form{
 background-color: rgb(151, 89, 151);
 color:white;
@@ -28,6 +30,7 @@ border-radius: 10px;
     background-color:rgb(151, 89, 151) ;
     color: white;
 }
+
 @media (max-width: 600px) {
     .cont-form{
         background-color: rgb(151, 89, 151);

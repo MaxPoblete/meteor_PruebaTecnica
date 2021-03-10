@@ -4,7 +4,7 @@ import { Row, Col} from 'react-bootstrap';
 const Header = ({ mensaje, claseMensaje }) => {
 
   return(
-    <Row>
+    <Row className="header">
       <Col lg={6} xs={12}>
         <h3><strong>Mantenedor Doctores</strong></h3>
       </Col>
