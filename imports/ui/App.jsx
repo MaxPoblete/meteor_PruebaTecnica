@@ -4,7 +4,6 @@ import  DoctorsCollection  from '../api/DoctorsCollection';
 import  DoctorForm  from '../ui/components/doctor/DoctorForm';
 import DoctorList from '../ui/components/doctor/DoctorList';
 import Header from '../ui/components/layout/Header'
-import axios from 'axios';
 
 const App = () => {
 
@@ -16,18 +15,9 @@ const App = () => {
     especialidad:''
   });
 
-  const[especialidades, setEspecialidades] = useState([]);
   const[mensaje, setMensaje] = useState('');
   const[claseMensaje, setClaseMensaje] = useState('');
   const[showBtnUpdate, setShowBtnUpdate] = useState(false)
-
-  useEffect( () => {
-    const getEspecialidades = async() => {
-      const respuesta = await axios.get('https://gist.githubusercontent.com/rodcisal/ef7839215d8d17ff9cf07b19e5e7593d/raw/718370f384f8dbcff1548933df45ea3394a223d3/especialidadesMedicas.json');
-      setEspecialidades(respuesta.data)
-    }
-    getEspecialidades()
-  },[]);
 
   const deleteDoctor = (doctorDelete) => { 
     DoctorsCollection.remove(doctorDelete._id)
@@ -93,7 +83,6 @@ const restablecer = () => {
       <hr></hr>
       <Row>
         <DoctorForm 
-          especialidades = {especialidades}
           doctor={doctor}
           showBtnUpdate={showBtnUpdate}
           setMensaje={setMensaje}

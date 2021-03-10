@@ -1,11 +1,11 @@
 import React from 'react';
 import { Button, Col, Form,Row } from 'react-bootstrap';
-import Titulo from '../layout/Titulo'
+import Titulo from '../layout/Titulo';
+import Especialidad from '../../components/doctor/Especialidad'
 
 const { validate, clean, format, getCheckDigit } = require('rut.js')
 
 const DoctorForm = ({ 
-  especialidades,
   setMensaje,
   CreateDoctor,
   doctor, 
@@ -16,7 +16,7 @@ const DoctorForm = ({
   restablecer
  }) => {
 
-  
+
   const actualizarState = (e) => {
     setDoctor({
         ...doctor,
@@ -144,9 +144,7 @@ const DoctorForm = ({
                           as="select">
 
                       <option value="">Seleccione Especialidad</option>
-                        {especialidades.map(item =>(
-                            <option key={item._id} value={item.nombre}>{item.nombre}</option>
-                        ))}
+                        <Especialidad/>
                     </Form.Control>
                   </Col>
                   <Col lg={4} xs={12}>
