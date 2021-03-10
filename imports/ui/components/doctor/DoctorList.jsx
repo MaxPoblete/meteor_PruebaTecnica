@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from 'react';
+import React from 'react';
 import { Col,Table } from 'react-bootstrap';
 import Titulo from '../layout/Titulo'
 import { useTracker } from 'meteor/react-meteor-data';
@@ -7,10 +7,7 @@ import  DoctorsCollection  from '../../../api/DoctorsCollection';
 
 const DoctorList = ({ deleteDoctor, getDoctorUpdate }) => {
 
-    const doctores =  useTracker(() =>DoctorsCollection.find({}).fetch());
-
-
-   
+    const doctores =  useTracker(() =>DoctorsCollection.find({}).fetch());   
 
   return(
         <Col lg={8} xs={12} className="m-4">

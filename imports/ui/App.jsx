@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react';
-import { Container, Row, Col} from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import  DoctorsCollection  from '../api/DoctorsCollection';
 import  DoctorForm  from '../ui/components/doctor/DoctorForm';
 import DoctorList from '../ui/components/doctor/DoctorList';
@@ -32,8 +32,6 @@ const App = () => {
   const deleteDoctor = (doctorDelete) => { 
     DoctorsCollection.remove(doctorDelete._id)
     setMensaje('Doctor Eliminado Con Exito')
-    console.log(doctorDelete)
-    console.log(doctor)
   }
   
 
@@ -54,7 +52,6 @@ const getDoctorUpdate = (doctorUp) => {
   setDoctor(doctorUp)
   setMensaje('')
   setShowBtnUpdate(true)
-  console.log(doctorUp);
 }
 
 const updateDoctor = (doctor) => {

@@ -4,6 +4,7 @@
     border-radius: 15px;
     padding: 1rem;
 }
+
 .exito{
     color: white;
     background-color: yellowgreen;
@@ -14,6 +15,7 @@
 body{
     background-color:rgb(224, 224, 224) ;
 }
+
 .cont-form{
 background-color: rgb(151, 89, 151);
 color:white;
@@ -21,6 +23,7 @@ padding: 1rem;
 height: 15rem;
 border-radius: 15px;
 }
+
 .head-Table{
     background-color:rgb(151, 89, 151) ;
     color: white;
